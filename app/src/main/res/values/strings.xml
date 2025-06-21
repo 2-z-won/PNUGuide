@@ -26,4 +26,6 @@
     <string name="title_stamp">Stamp</string>
     <string name="title_chatbot">Chatbot</string>
     <string name="hint_search_map">Search location</string>
+    <string name="stamp_capture">인증하기</string>
+    <string name="stamp_failed">인증에 실패했습니다</string>
 </resources>
