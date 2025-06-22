@@ -65,8 +65,8 @@ class StampFragment : Fragment() {
             }
         }
 
-        viewModel.label.observe(viewLifecycleOwner) { label ->
-            label?.let {
+        viewModel.label.observe(viewLifecycleOwner) { code ->
+            code?.let {
                 QuizActivity.start(requireContext(), it)
                 viewModel.clearLabel()
             }

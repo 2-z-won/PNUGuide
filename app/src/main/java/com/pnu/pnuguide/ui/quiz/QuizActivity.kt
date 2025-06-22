@@ -321,7 +321,8 @@ class QuizActivity : AppCompatActivity() {
         const val EXTRA_TITLE = "extra_title"
         const val EXTRA_LAYOUT_RES = "extra_layout_res"
 
-        fun start(context: Context, title: String) {
+        fun start(context: Context, label: String) {
+            val title = com.pnu.pnuguide.data.LabelMappings.labelToTitle[label] ?: label
             val layoutRes = when (title) {
                 "대학본부" -> R.layout.activity_quiz_1
                 "조각공원" -> R.layout.activity_quiz_2
