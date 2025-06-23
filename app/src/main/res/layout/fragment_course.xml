@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light"
+        android:navigationIcon="@drawable/ic_arrow_back_black_24"
+        android:title="@string/title_course"
+        android:titleTextColor="@color/text_primary"
+        app:titleCentered="true" />
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tl12bl12bf2f2f4"
+            android:paddingVertical="12dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/rs49bgap0hwg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <EditText
+            android:inputType="text"
+            android:hint="Search  course"
+            android:id="@+id/r9hg358v9thk"
+            android:textColor="#667582"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tr12br12bf2f2f4"
+            android:paddingVertical="12dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp" />
+        <ImageButton
+            android:id="@+id/btn_cancel_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:src="@drawable/ic_close"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Course content -->
+    <ScrollView
+        android:id="@+id/rm27nijip3z"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/rodoik3gjtmq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/rvd36enc37tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="299dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/rxk786mfb6pi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="#FFFFFF"
+                        android:padding="16dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/rjomxclfwo6e"
+                            android:textColor="#111416"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Courses" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/r0ynj2pkd7ew9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="53dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/rguxz9lullzn"
+                            android:textColor="#111416"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="17dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Popular" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:id="@+id/r2qlk2kqy8g4"
+                            android:textColor="#667582"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="17dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="History &amp; Culture" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:id="@+id/rygry7veadsj"
+                            android:textColor="#667582"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="17dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Study &amp; Rest" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/section_popular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/r4426ybbx5od"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="#FFFFFF"
+                        android:paddingVertical="12dp"
+                        android:paddingHorizontal="16dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/image_popular1"
+                            android:layout_width="100dp"
+                            android:layout_height="56dp"
+                            android:layout_marginEnd="16dp"
+                            android:src="@drawable/sae_do"
+                            android:scaleType="fitXY" />
+                        <LinearLayout
+                            android:id="@+id/riflumarg2sb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/rgacabiwg4v5"
+                                android:textColor="#111416"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="새벽벌 도서관" />
+                            <TextView
+                                android:id="@+id/ryhofemzthe"
+                                android:textColor="#667582"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="79dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="건물번호: 420" />
+                        </LinearLayout>
+                    </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/r0r21uflcziqi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="#FFFFFF"
+                        android:paddingVertical="12dp"
+                        android:paddingHorizontal="16dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/image_popular2"
+                            android:layout_width="100dp"
+                            android:layout_height="56dp"
+                            android:layout_marginEnd="16dp"
+                            android:src="@drawable/vs"
+                            android:scaleType="fitXY" />
+                        <LinearLayout
+                            android:id="@+id/rnvgyi3mx9j"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/rt4eljwh33c8"
+                                android:textColor="#111416"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="PNU V-SPACE" />
+                            <TextView
+                                android:id="@+id/r8wdpfvp0o6t"
+                                android:textColor="#667582"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="79dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="건물번호: 303" />
+                        </LinearLayout>
+                    </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/r0augc34kguoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="#FFFFFF"
+                        android:paddingVertical="12dp"
+                        android:paddingHorizontal="16dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/image_popular3"
+                            android:layout_width="100dp"
+                            android:layout_height="56dp"
+                            android:layout_marginEnd="16dp"
+                            android:src="@drawable/beopjeong"
+                            android:scaleType="fitXY" />
+                        <LinearLayout
+                            android:id="@+id/rygl2b1gaj5c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/roa2s40d4zb"
+                                android:textColor="#111416"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="법학관 모의 법정" />
+                            <TextView
+                                android:id="@+id/rq53owvlant"
+                                android:textColor="#667582"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="79dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="건물번호: 609" />
+                        </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/section_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:id="@+id/card_history_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:background="#FFFFFF"
+                            android:paddingVertical="12dp"
+                            android:paddingHorizontal="16dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/image_history_1"
+                                android:layout_width="100dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="16dp"
+                                android:src="@drawable/jijil"
+                                android:scaleType="fitXY" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/text_history_title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="박물관"
+                                    android:textColor="#111416"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/text_history_desc_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="79dp"
+                                    android:text="건물 번호: 412"
+                                    android:textColor="#667582"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card_history_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:background="#FFFFFF"
+                            android:paddingVertical="12dp"
+                            android:paddingHorizontal="16dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/image_history_2"
+                                android:layout_width="100dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="16dp"
+                                android:src="@drawable/jijil"
+                                android:scaleType="fitXY" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/text_history_title_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="지질박물관"
+                                    android:textColor="#111416"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/text_history_desc_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="79dp"
+                                    android:text="건물 번호: 414"
+                                    android:textColor="#667582"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card_history_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:background="#FFFFFF"
+                            android:paddingVertical="12dp"
+                            android:paddingHorizontal="16dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/image_history_3"
+                                android:layout_width="100dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="16dp"
+                                android:src="@drawable/ang"
+                                android:scaleType="fitXY" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/text_history_title_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="중앙 도서관"
+                                    android:textColor="#111416"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/text_history_desc_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="79dp"
+                                    android:text="건물 번호: 510"
+                                    android:textColor="#667582"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/section_study"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:id="@+id/card_study_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:background="#FFFFFF"
+                            android:paddingVertical="12dp"
+                            android:paddingHorizontal="16dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/image_study_1"
+                                android:layout_width="100dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="16dp"
+                                android:src="@drawable/nuck"
+                                android:scaleType="fitXY" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/text_study_title_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="넉넉한 터"
+                                    android:textColor="#111416"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/text_study_desc_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="79dp"
+                                    android:text="건물번호: 203"
+                                    android:textColor="#667582"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card_study_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:background="#FFFFFF"
+                            android:paddingVertical="12dp"
+                            android:paddingHorizontal="16dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/image_study_2"
+                                android:layout_width="100dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="16dp"
+                                android:src="@drawable/cafe"
+                                android:scaleType="fitXY" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/text_study_title_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="cafe 운죽정"
+                                    android:textColor="#111416"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/text_study_desc_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="79dp"
+                                    android:text="건물번호: 202"
+                                    android:textColor="#667582"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/card_study_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:background="#FFFFFF"
+                            android:paddingVertical="12dp"
+                            android:paddingHorizontal="16dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/image_study_3"
+                                android:layout_width="100dp"
+                                android:layout_height="56dp"
+                                android:layout_marginEnd="16dp"
+                                android:src="@drawable/jinli"
+                                android:scaleType="fitXY" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/text_study_title_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="진리의 뜰"
+                                    android:textColor="#111416"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/text_study_desc_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="79dp"
+                                    android:text="운죽정 뒷편"
+                                    android:textColor="#667582"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_nav_height"
+        android:background="@color/background_light"
+        android:paddingTop="20dp"
+        android:paddingBottom="-20dp"
+        app:itemIconSize="@dimen/bottom_nav_icon_size"
+        app:labelVisibilityMode="unlabeled"
+        app:itemHorizontalTranslationEnabled="false"
+        app:menu="@menu/menu_bottom_nav" />
+
+    <LinearLayout
+        android:id="@+id/bottom_labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:orientation="horizontal"
+        android:background="@color/background_light">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_home"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_course"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_stamp"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_chatbot"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

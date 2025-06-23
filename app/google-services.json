@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "640497600481",
+    "project_id": "pnuguide-sss",
+    "storage_bucket": "pnuguide-sss.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640497600481:android:8af3ed80e292d73b7334a0",
+        "android_client_info": {
+          "package_name": "com.pnu.pnuguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYgdyS0RacGMiXqzs_n0Kkw9n7G-t_0jY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

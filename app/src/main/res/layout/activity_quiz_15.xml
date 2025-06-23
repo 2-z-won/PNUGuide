@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light"
+        android:navigationIcon="@drawable/ic_arrow_back_black_24"
+        android:title="@string/title_quiz"
+        android:titleTextColor="@color/text_primary"
+        app:titleCentered="true" />
+
+    <TextView
+        android:id="@+id/text_quiz_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz 15"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/text_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="부산대 박물관은 우리나라 국립 박물관에 소속되어 있다." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_option_o"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="O" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_option_x"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="X" />
+    </LinearLayout>
+
+</LinearLayout>

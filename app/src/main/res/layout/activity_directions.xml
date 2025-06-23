@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_directions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:navigationIcon="@drawable/ic_arrow_back_black_24"
+        android:title="@string/get_directions" />
+
+    <EditText
+        android:id="@+id/edit_start"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/divider"
+        android:hint="@string/start_point"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary" />
+
+    <EditText
+        android:id="@+id/edit_destination"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/divider"
+        android:hint="@string/destination"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_open_maps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/open_in_google_maps" />
+
+</LinearLayout>
