@@ -58,6 +58,15 @@ class HomeFragment : Fragment() {
         progressBar.progress = count
     }
 
+    override fun onResume() {
+        super.onResume()
+        view?.let { v ->
+            val user = FirebaseAuth.getInstance().currentUser
+            val prefix = user?.email?.substringBefore("@") ?: ""
+            v.findViewById<TextView>(R.id.tv_welcome)?.text = "방문을 환영합니다! ${prefix}님"
+        }
+    }
+
     private fun openCampusMapPdf() {
         val inputStream = resources.openRawResource(R.raw.campus_map)
         val file = File(requireContext().getExternalFilesDir(null), "campus_map.pdf")

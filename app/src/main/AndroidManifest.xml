@@ -57,6 +57,7 @@
         <activity android:name="com.pnu.pnuguide.ui.quiz.QuizActivity" />
         <activity android:name="com.pnu.pnuguide.ui.profile.EditProfileActivity" />
         <activity android:name="com.pnu.pnuguide.ui.SettingsActivity" />
+        <activity android:name="com.pnu.pnuguide.ui.AppInfoActivity" />
     </application>
 
 </manifest>

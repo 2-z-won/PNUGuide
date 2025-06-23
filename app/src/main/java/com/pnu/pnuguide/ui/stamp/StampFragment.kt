@@ -60,15 +60,6 @@ class StampFragment : Fragment() {
             }
         }
 
-        binding.buttonCameraLarge.setOnClickListener {
-            if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA)
-                == PackageManager.PERMISSION_GRANTED) {
-                startCamera()
-            } else {
-                requestPermission.launch(Manifest.permission.CAMERA)
-            }
-        }
-
         viewModel.error.observe(viewLifecycleOwner) { failed ->
             if (failed) {
                 Toast.makeText(requireContext(), getString(com.pnu.pnuguide.R.string.stamp_failed), Toast.LENGTH_SHORT).show()
