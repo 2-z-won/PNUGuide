@@ -34,6 +34,23 @@ android {
         ?: System.getenv("MAPS_API_KEY")
         ?: "API_KEY_MISSING"
 
+    val keystoreProps = Properties()
+    val keystorePropsFile = rootProject.file("keystore.properties")
+    if (keystorePropsFile.exists()) {
+        keystoreProps.load(FileInputStream(keystorePropsFile))
+    }
+
+    signingConfigs {
+        create("release") {
+            if (keystorePropsFile.exists()) {
+                storeFile = file(keystoreProps["storeFile"] as String)
+                storePassword = keystoreProps["storePassword"] as String
+                keyAlias = keystoreProps["keyAlias"] as String
+                keyPassword = keystoreProps["keyPassword"] as String
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -44,6 +61,7 @@ android {
             buildConfigField("String", "OPENAI_API_KEY", "\"$openAiKey\"")
             buildConfigField("String", "MAPS_API_KEY", "\"$mapsApiKey\"")
             manifestPlaceholders["MAPS_API_KEY"] = mapsApiKey
+            signingConfig = signingConfigs.getByName("release")
         }
         debug {
             buildConfigField("String", "OPENAI_API_KEY", "\"$openAiKey\"")
